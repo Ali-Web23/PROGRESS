@@ -1,0 +1,707 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Cpmmplatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Simple</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'TT Travels';
+    }
+
+    .contain {
+        padding-left: 150px;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+
+
+    .main {
+        min-height: 90vh;
+        background-image: url(/images/image.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+    .text_logo {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 73px;
+        margin-top: 50px;
+    }
+
+    .images_logo {
+        margin-top: -30px;
+    }
+
+    .col_btn {
+        margin-top: 20px;
+    }
+
+    .nav_item_left {
+        margin-right: 25px;
+    }
+
+        .nav_item_left:last-of-type {
+            margin-right: 30px;
+        }
+
+    .nav-link {
+        color: white;
+        font-family: 'TT Travels';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .header_text {
+        padding-top: 170px;
+        padding-left: 100px;
+    }
+
+    .row {
+        padding-top: 100px;
+        --bs-gutter-x: none;
+    }
+
+    .row-3 {
+        padding-top: 50px;
+        padding-left: 300px;
+    }
+
+    .nav_text_one {
+        font-family: 'TT Travels';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 140px;
+        line-height: 22px;
+    }
+
+    .nav_text_two {
+        font-family: 'TT Travels';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 22px;
+    }
+
+    .btn {
+        border-radius: 50px;
+    }
+
+    .btn_2 {
+        border-radius: 50px;
+        width: 238px;
+        height: 61px;
+        text-align: center;
+        padding-top: 18px;
+    }
+
+    .btn_3 {
+        border-radius: 50px;
+    }
+
+    .btn_one {
+        margin-top: 10px;
+        width: 257px;
+        height: 40px;
+    }
+
+    .btn_two {
+        margin-top: 30px;
+        width: 257px;
+        height: 40px;
+    }
+
+    .btn_three{
+        padding-top:34px;
+    }
+
+
+    .services {
+        background-color: black;
+        color: white;
+    }
+
+    .mobyle_develop {
+        max-width: 680px;
+        min-height: 542px;
+        background: rgba(183, 203, 255, 0.1);
+        margin-left: 200px;
+        padding-left: 50px;
+        border-radius: 60px;
+        z-index: 1;
+    }
+
+        .mobyle_develop:hover {
+            background: linear-gradient(180deg, rgba(255, 183, 183, 0.5) 0%, rgba(255, 183, 183, 0) 100%);
+        }
+
+    .mobyle_develop_mac {
+        max-width: 680px;
+        min-height: 542px;
+        background: rgba(183, 203, 255, 0.1);
+        margin-left: 640px;
+        margin-top: 100px;
+        padding-left: 150px;
+        border-radius: 60px;
+    }
+
+        .mobyle_develop_mac:hover {
+            background: linear-gradient(180deg, rgba(255, 183, 183, 0.5) 0%, rgba(255, 183, 183, 0) 100%);
+        }
+
+    .loptop {
+        margin-left: 200px;
+        margin-top: 70px;
+    }
+
+    .img_two {
+        margin-top: 50px;
+        margin-left: -30px;
+    }
+
+    .mac {
+        margin-top: 250px;
+        width: 404px;
+        height: 88px;
+        margin-left: -90px;
+    }
+
+    .ser {
+        margin-top: 100px;
+    }
+
+    .PC {
+        margin-left: 160px;
+        margin-top: 60px;
+    }
+
+    .servis {
+        font-family: 'TT Travels';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 80px;
+        padding-top: 80px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    .blog {
+        background-color: black;
+        color: white;
+    }
+
+    .text_blog p {
+        margin-left: 630px;
+        font-size: 100px;
+        font-weight: 800;
+    }
+
+    .image_blog img {
+        width: 457px;
+        height: 258px;
+        margin-left: 750px;
+        margin-top: 100px;
+        margin-bottom: -70px
+    }
+
+    .image_blog_two img {
+        width: 620px;
+        height: 420px;
+        margin-left: 170px;
+        margin-top: 80px;
+    }
+
+    .text_blog_two p {
+        width: 965px;
+        height: 363px;
+        font-family: 'TT Travels';
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 34px;
+        text-align: justify;
+    }
+
+    .text_blog_three p {
+        margin-left: 770px;
+        font-size: 50px;
+        margin-top: -120px;
+    }
+
+    .image_blog_two img {
+        transition: 1s; /* Время эффекта */
+        display: block; /* Убираем небольшой отступ снизу */
+    }
+
+        .image_blog_two img:hover {
+            transform: scale(1.2); /* Увеличиваем масштаб */
+        }
+
+
+
+    .image_blog_two_one img {
+        margin-left: 180px;
+        margin-top: -60px;
+        width: 620px;
+        height: 420px;
+        transition: 1s; /* Время эффекта */
+        display: block; /* Убираем небольшой отступ снизу */
+    }
+
+        .image_blog_two_one img:hover {
+            transform: scale(1.2); /* Увеличиваем масштаб */
+        }
+
+    .image_blog_two_three img {
+        width: 620px;
+        height: 420px;
+        margin-top: -60px;
+        transition: 1s; /* Время эффекта */
+        display: block; /* Убираем небольшой отступ снизу */
+    }
+
+        .image_blog_two_three img:hover {
+            transform: scale(1.2); /* Увеличиваем масштаб */
+        }
+
+
+
+    .row_blog {
+        margin-left: 100px;
+    }
+
+    .footer {
+        background-color: black;
+        padding-top: 150px
+    }
+
+    .footer_blog {
+        display: flex;
+        justify-content: space-between;
+        width: 1180px;
+        margin-left: 400px;
+        background-color: black;
+        color: white;
+        font-family: 'TT Travels';
+    }
+
+    .Cantact {
+        font-weight: 800;
+        font-family: 'TT Travels';
+    }
+
+    .footer_close {
+        width: 322px;
+        margin-top: 50px;
+        margin-left: 800px;
+        color: white;
+        text-align: center;
+    }
+
+
+    .filter {
+        background-color: red;
+    }
+
+    .text_services_two{
+        
+    }
+
+    /* Контейнер для кнопки */
+    .css-modal-target-container {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Кнопка для открытия */
+    .css-modal-open {
+        display: inline-flex;
+        margin: 10px;
+        text-decoration: none;
+        position: relative;
+        font-size: 20px;
+        line-height: 20px;
+        padding: 12px 30px;
+        color: #FFF;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: 'Roboto', Тahoma, sans-serif;
+        background: #337AB7;
+        cursor: pointer;
+        border: 2px solid #BFE2FF;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+        .css-modal-open:hover,
+        .css-modal-open:active,
+        .css-modal-open:focus {
+            color: #FFF;
+        }
+
+        .css-modal-open:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -50px;
+            bottom: 0;
+            left: 0;
+            border-right: 50px solid transparent;
+            border-top: 50px solid #2D6B9F;
+            transition: transform 0.5s;
+            transform: translateX(-100%);
+            z-index: -1;
+        }
+
+        .css-modal-open:hover:before,
+        .css-modal-open:active:before,
+        .css-modal-open:focus:before {
+            transform: translateX(0);
+        }
+
+    /* Контейнер, который затемняет страницу */
+    .css-modal-target {
+        display: none;
+    }
+
+        .css-modal-target:target {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 4;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            animation: bg 0.5s ease;
+            background: rgba(51, 122, 183, 0.7);
+        }
+
+        /* Модальное окно */
+        .css-modal-target .cmt {
+            font-family: Verdana, sans-serif;
+            font-size: 16px;
+            padding: 20px;
+            width: 80%;
+            z-index: 8;
+            max-width: 600px;
+            max-height: 70%;
+            transition: 0.5s;
+            border: 6px solid #BFE2FF;
+            border-radius: 12px;
+            background: #FFF;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+            text-align: center;
+            overflow: auto;
+            animation: scale 0.5s ease;
+        }
+
+    /* Кнопка с крестиком закрывающая окно */
+    .css-modal-close {
+        position: relative;
+        display: block;
+    }
+
+        .css-modal-close:after {
+            content: "";
+            width: 50px;
+            height: 50px;
+            border: 6px solid #BFE2FF;
+            border-radius: 12px;
+            position: fixed;
+            z-index: 10;
+            top: 20px;
+            right: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23337AB7' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3e%3cline x1='18' y1='6' x2='6' y2='18'%3e%3c/line%3e%3cline x1='6' y1='6' x2='18' y2='18'%3e%3c/line%3e%3c/svg%3e");
+            background-color: #FFF;
+            background-size: cover;
+            animation: move 0.5s ease;
+        }
+
+        .css-modal-close:before {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            content: "";
+            cursor: default;
+        }
+
+    .text_block {
+        box-sizing: border-box;
+        width: 289px;
+        height: 44px;
+        left: 319px;
+        top: 355px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        border-radius: 22px;
+    }
+
+
+    .mb-3 {
+        margin-top: 20px;
+    }
+
+    .text_services {
+        position: absolute;
+        z-index: 2;
+        width: 289px;
+        height: 44px;
+        margin-top: -120px;
+        margin-left: 150px;
+        padding-top: 10px;
+        font-family: Titillium Web;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        border-radius: 22px;
+    }
+
+    .text_services_two {
+        position: absolute;
+        z-index: 2;
+        width: 289px;
+        height: 44px;
+        margin-top: -120px;
+        margin-left: 40px;
+        padding-top: 10px;
+        font-family: Titillium Web;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        border-radius: 22px;
+    }
+
+</style>
+
+
+<body>
+
+
+
+
+    <div class="main">
+        <div class="container">
+            <div class="main__header row p-4">
+                <div class="col-3">
+                    <a><img class="images_logo" src="/images/лого.png" /></a>
+                    <span class="text_logo">Progress</span>
+                </div>
+                <div class="col-7">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid contain">
+                            <a class="navbar-brand" href="#">Главная</a>
+
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item nav_item_left">
+                                        <a class="nav-link" href="#part1">Услуги</a>
+                                    </li>
+                                    <li class="nav-item nav_item_left">
+                                        <a class="nav-link" href="#part3">Блог</a>
+                                    </li>
+                                    <li class="nav-item  nav_item_left">
+                                        <a class="nav-link" href="#part2">Контакты</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-2 col_btn">
+                    <a type="button" class="btn btn-danger btn-bd-primary" href="#css-modal-target">Перезвоните мне</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header_text">
+            <div class="row">
+                <h1 class="nav_text_one">PROGRESS</h1>
+            </div>
+            <div class="row">
+                <span class="nav_text_two">IT компания со свежими идеями</span>
+            </div>
+            <div class="row-3">
+                <a type="button" href="#css-modal-target" class="btn_2 btn-danger">Заказать проект</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="services" id="part1">
+        <h1 class="servis">Наши услуги</h1>
+
+        <div class="row ser">
+
+            <div class="row mobyle_develop ">
+                <div class="text_services">
+                    <p>Мобильная разработка</p>
+                </div>
+                <div class="col-2 mobyle">
+
+                    <div class="row-2">
+                        <img src="/images/mobyle.png" />
+                    </div>
+                </div>
+                <div class="col-5 PC">
+                    <span>Создаем кроссплатформенные и нативные мобильные приложения от MVP до приложений с серьезной бизнес-логикой и архитектурой.</span>
+                    <div class="row btn_one">
+                        <a type="button" href="#css-modal-target" class="btn btn-outline-danger">Связаться с нами</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobyle_develop row">
+                <div class="text_services">
+                    <p>Web разработка</p>
+                </div>
+                <div class=" col-2 mobywle">
+                    <div class="img_two row-2">
+                        <img src="/images/PC.png" />
+                    </div>
+                </div>
+                <div class="col-4 loptop">
+                    <span>Бэкенд и фронтенд разработка любого уровня сложност - от небольших сайтов до корпоративных порталов</span>
+                    <div class="row btn_two">
+                        <a type="button" href="#css-modal-target" class="btn btn-outline-danger">Связаться с нами</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mobyle_develop_mac row">
+                <div class="text_services_two">
+                    <p>Разработка UI/UX</p>
+                </div>
+                <div class="col-2 mobyle">
+                    <div class="row-2">
+                        <img src="/images/mac.png">
+                    </div>
+                </div>
+                <div class="col-4 mac">
+                    <span>Разрабатываем макеты с учетом поведенческих факторов потребителей, что позволяет создавать эффективные продукты.</span>
+                    <div class="row btn_three">
+                        <a type="button" href="#css-modal-target" class="btn btn-outline-danger">Связаться с нами</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="blog" id="part3">
+        <div class=" container_blog container-fluid">
+            <div class="row">
+                <div class="image_blog col"><img src="/images/logo_blog.png" /></div>
+            </div>
+            <div class="filter"></div>
+            <div class="row">
+                <div class="text_blog col"><p>PROGRESS</p></div>
+            </div>
+            <div class="text_blog_three row">
+                <div class="col"><p>IT COMPANY</p></div>
+            </div>
+
+
+            <div class="row_blog row row-cols-2">
+                <div class=" text_blog_two col">
+                    <p>
+                        Progress - амбициозная, развивающаяся компания, предоставляющая услуги в области информационных технологий. Мы основываемся на разработке сайтов, серверов и их проектирование. За счет высококвалифицированного персонала, развитого в разных областях информационных технологий, компания в состоянии взять на себя всю заботу об информационной среде клиента. Разработка программного обеспечения, web design, создание мобильных приложений - это все про нас.
+                    </p>
+
+                    <p>
+                        Progress - это новый взгляд на сферу IT, это компания со свежими идеями, это реализация ваших проектов с нуля, это креатив и качество.
+
+
+                        Наша компания будет для вас помощником в виртуальной среде, так как мы ценим ваше время и готовы взять на себя ответственность за качественно выполненную работу.Нам важно чтобы ваши желания были осуществлены в реальность при простом и стильном интерфейсе.
+                    </p>
+
+                </div>
+                <div class="image_blog_two col"><img src="~/images/img_pictures.png" /></div>
+                <div class="image_blog_two_three col"><img src="~/images/picture.png" /></div>
+                <div class="image_blog_two_one col"><img src="~/images/pictures_one.png" /></div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer" id="part2">
+        <div class="footer_blog">
+            <p class="Cantact">Контакты</p>
+            <p>
+                663309 ул. Ломоносова 5,<br />
+                г. Норильск, Красноярский край
+
+            <p>
+                +7 (913) 494-61-23
+            </p>
+            <p>triton@index.ru</p>
+        </div>
+        <div class="footer_close">
+            <p>
+                Свяжитесь с нами<br />
+                Будем рады видеть вас<br />
+                2022 (с) — Все права защищены
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <!-- Кнопка -->
+    <!-- Модальное окно -->
+    <div class="css-modal-target" id="css-modal-target">
+        <div class="cmt">
+            <form method="post">
+                <p>Оставьте заявку мы обязательно вам перезвоним!</p>
+                <input class="form-control form-control-sm" type="text" name="userName" placeholder="Введите номер телефона:" aria-label=".form-control-sm example">
+                <div class="mb-3">
+                    <textarea class="form-control" id="message-text" name="userPhone" placeholder="Комментарий..."></textarea>
+                </div>
+                <p>
+                    <button type="submit" class="btn btn-dark">Оставить заявку</button>
+                </p>
+            </form>
+        </div>
+        <a href="#close" class="css-modal-close"></a>
+    </div>
+
+
+
+    <main class="items">
+        @RenderBody()
+    </main>
+
+
+
+
+</body>
+</html>

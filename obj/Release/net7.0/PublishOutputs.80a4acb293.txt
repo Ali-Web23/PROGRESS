@@ -1,0 +1,10 @@
+D:\Progress\Progress\obj\Release\net7.0\PubTmp\Out\Progress.exe
+D:\Progress\Progress\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
+D:\Progress\Progress\obj\Release\net7.0\PubTmp\Out\appsettings.json
+D:\Progress\Progress\obj\Release\net7.0\PubTmp\Out\Progress.dll
+D:\Progress\Progress\obj\Release\net7.0\PubTmp\Out\Progress.deps.json
+D:\Progress\Progress\obj\Release\net7.0\PubTmp\Out\Progress.runtimeconfig.json
+D:\Progress\Progress\obj\Release\net7.0\PubTmp\Out\Progress.pdb
+D:\Progress\Progress\obj\Release\net7.0\PubTmp\Out\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Progress\Progress\obj\Release\net7.0\PubTmp\Out\Microsoft.Extensions.DependencyModel.dll
+D:\Progress\Progress\obj\Release\net7.0\PubTmp\Out\Newtonsoft.Json.dll
